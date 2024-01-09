@@ -29,13 +29,14 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    cursor: default;
+    cursor: pointer;
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
 
 .navbar a {
     display: inline-block;
+    height: max-content;
     font-size: 18px;
     opacity: 0;
     color: #fff;
@@ -48,7 +49,7 @@ body {
 }
 
 .navbar a:hover, .navbar a.active {
-    color: #0ef;
+    color: rgb(0, 255, 136);
 }
 
 .home {
@@ -80,7 +81,7 @@ body {
 }
 
 .home-content h3 span {
-    color: #0ef;
+    color: rgb(0, 255, 136);
 }
 
 .home-content h1 {
@@ -103,6 +104,7 @@ body {
     max-width: 450px;
     opacity: 0;
     margin-right: -20px;
+    border-radius: 0px 0px 35% 100%;
     animation: zoonIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 2s, 3s;
 }
@@ -114,10 +116,10 @@ body {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid rgb(0, 255, 136);
     border-radius: 50%;
     font-size: 20px;
-    color: #0ef;
+    color: rgb(0, 255, 136);
     text-decoration: none;
     margin: 30px 15px 30px 0;
     transition: .5s ease;
@@ -127,17 +129,17 @@ body {
 }
 
 .social-media a:hover {
-    background-color: #0ef;
+    background-color: rgb(0, 255, 136);
     color: #1f242d;
-    box-shadow: 0 0 20px #0ef;
+    box-shadow: 0 0 20px rgb(0, 255, 136);
 }
 
 .btn {
     display: inline-block;
     padding: 12px 28px;
-    background: #0ef;
+    background: rgb(0, 255, 136);
     border-radius: 40px;
-    box-shadow: 0 0 10px #0ef;
+    box-shadow: 0 0 25px rgb(0, 255, 136);
     font-size: 16px;
     color: #1f242d;
     letter-spacing: 1px;
@@ -146,6 +148,14 @@ body {
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
+    transition: .25s;
+}
+
+.btn:hover {
+    color: #fff;
+    text-shadow: 0px 0px 25px #fff;
+    box-shadow: 0px 0px 50px rgb(0, 255, 136);
+    transition: .1s;
 }
 
 @keyframes slideRight {
