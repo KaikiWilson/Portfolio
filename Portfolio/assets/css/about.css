@@ -27,7 +27,7 @@ body {
 .box-first-h1 {
     display: flex;
     position: absolute;
-    transform: translateY(305px);
+    transform: translateY(44.5vh);
     justify-content: center;
     align-items: end;
     width: 100vw;
@@ -41,7 +41,7 @@ body {
 .box-who-i-am {
     display: flex;
     position: absolute;
-    transform: translateY(350px);
+    transform: translateY(50vh);
     justify-content: center;
     align-items: start;
     width: 100vw;
