@@ -7,6 +7,11 @@
 
 body {
     background-color: #000000e8;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
 }
 
 .box-h1-princ {
@@ -34,7 +39,7 @@ body {
     height: max-content;
     background-color: #ffffff21;
 
-    animation-name: left-slide;
+    animation-name: left-slide-in;
     animation-duration: 1.5s;
 }
 
@@ -48,8 +53,8 @@ body {
     height: max-content;
     background-color: #ffffff09;
 
-    animation-name: right-slide;
-    animation-duration: 1.5s;
+    animation-name: right-slide-in;
+    animation-duration: 4.5s;
 }
 
 .first-h1 {
@@ -84,7 +89,7 @@ body {
     color: #fff;
     cursor: pointer;
 
-    animation-name: fadeIn;
+    animation-name: fade-in;
     animation-duration: 5s;
 
     transition: .35s;
@@ -98,29 +103,107 @@ body {
     transition: .35s;
 }
 
+#hard-skills {
+    display: none;
+    text-align: center;
+    text-shadow: 4px 0px 1px rgb(255, 166, 0);
+    font-size: 50px;
 
 
-@keyframes left-slide {
-    0% {
-        transform: translateX(-50vw);
-        transform: translateY(305px);
-    }
-    100% {
-        transform: translateX(0)
+
+    color: #fff;
+}
+
+.container {
+    width: 100vw;
+    height: 70vh;
+    padding: 10px;
+    display: none;
+    grid-template-areas: "1 2 3";
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+
+.card-content {
+    width: 500px;
+    height: 20vh;
+    background-color: rgb(255, 166, 0);
+    border-radius: 15px;
+
+    box-shadow: 5px 10px 20px 0px orange,
+    50px 10px 100px 0px red;
+
+    padding: 25px;
+    font-size: 25px;
+    font-weight: lighter;
+    text-shadow: 2px 0px 2px #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes top-slide-out {
+
+    to {
+        transform: translateY(-102vh)
     }
 }
 
-@keyframes right-slide {
+
+
+@keyframes left-slide-in {
     0% {
-        transform: translateX(100vw);
-        transform: translateY(350px);
+        transform: translate(-105vw, 44.5vh)
     }
     100% {
-        transform: translateY(350px);
+        transform: translate(0vw, 44.5vh)
     }
 }
 
-@keyframes fadeIn {
+
+@keyframes left-slide-out {
+    0% {
+        transform: translate(0vw, 44.5vh)
+    }
+    100% {
+        transform: translate(-105vw, 44.5vh)
+    }
+}
+
+
+
+@keyframes right-slide-in {
+    0% {
+        transform: translate(105vw, 50vh)
+    }
+    100% {
+        transform: translate(0, 50vh);
+    }
+}
+
+
+@keyframes right-slide-out {
+    0% {
+        transform: translate(0, 50vh);
+    }
+    100% {
+        transform: translate(105vw, 50vh)
+    }
+}
+
+
+
+@keyframes fade-in {
     0% {
         opacity: 0;
     }
@@ -131,5 +214,19 @@ body {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
