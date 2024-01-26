@@ -119,15 +119,17 @@ body::-webkit-scrollbar {
     height: 70vh;
     padding: 10px;
     display: none;
-    grid-template-areas: "1 2 3";
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: space-evenly;
+    align-items: center;
     color: #fff;
+    padding: 50px;
 }
 
 
 .card-content {
-    width: 500px;
+    width: 33%;
     height: 20vh;
     background-color: rgb(255, 166, 0);
     border-radius: 15px;
@@ -139,6 +141,7 @@ body::-webkit-scrollbar {
     font-size: 25px;
     font-weight: lighter;
     text-shadow: 2px 0px 2px #fff;
+    margin: 20px 0 20px 0;
 }
 
 
