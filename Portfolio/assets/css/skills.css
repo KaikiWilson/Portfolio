@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: #000000e8;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+
+
+
+#hard-skills {
+    display: block;
+    text-align: center;
+    text-shadow: 4px 0px 1px rgb(255, 166, 0);
+    font-size: 50px;
+
+
+
+    color: #fff;
+}
+
+.container {
+    width: 100vw;
+    height: 70vh;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    padding: 50px;
+}
+
+
+.card-content {
+    width: 33%;
+    height: 20vh;
+    background-color: rgb(255, 166, 0);
+    border-radius: 15px;
+
+    box-shadow: 5px 10px 20px 0px orange,
+    50px 10px 100px 0px red;
+
+    padding: 25px;
+    font-size: 25px;
+    font-weight: lighter;
+    text-shadow: 2px 0px 2px #fff;
+    margin: 20px 0 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes top-slide-out {
+
+    to {
+        transform: translateY(-102vh)
+    }
+}
+
+
+
+@keyframes left-slide-in {
+    0% {
+        transform: translate(-105vw, 44.5vh)
+    }
+    100% {
+        transform: translate(0vw, 44.5vh)
+    }
+}
+
+
+@keyframes left-slide-out {
+    0% {
+        transform: translate(0vw, 44.5vh)
+    }
+    100% {
+        transform: translate(-105vw, 44.5vh)
+    }
+}
+
+
+
+@keyframes right-slide-in {
+    0% {
+        transform: translate(105vw, 50vh)
+    }
+    100% {
+        transform: translate(0, 50vh);
+    }
+}
+
+
+@keyframes right-slide-out {
+    0% {
+        transform: translate(0, 50vh);
+    }
+    100% {
+        transform: translate(105vw, 50vh)
+    }
+}
+
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes top-slide-in {
+    from {
+        transform: translateY(-10vh);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes hard-skills-up {
+    to { transform: translateY(-100vh); }
+}

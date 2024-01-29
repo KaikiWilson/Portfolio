@@ -54,7 +54,7 @@ body::-webkit-scrollbar {
     background-color: #ffffff09;
 
     animation-name: right-slide-in;
-    animation-duration: 4.5s;
+    animation-duration: 1.5s;
 }
 
 .first-h1 {
@@ -103,52 +103,88 @@ body::-webkit-scrollbar {
     transition: .35s;
 }
 
-#hard-skills {
-    display: none;
+.about-me-title {
+    display: block;
+    width: 100vw;
+    height: max-content;
     text-align: center;
-    text-shadow: 4px 0px 1px rgb(255, 166, 0);
+
+    margin: 20px 0;
+
+    color: rgb(255, 255, 255);
     font-size: 50px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px 1px #00000063;
+}
 
+.about-me-subtitle {
+    display: block;
+    width: 100vw;
+    height: max-content;
+    text-align: center;
 
+    padding: 10px;
+    margin: 50px 0;
 
     color: #fff;
+    font-size: 40px;
+    font-weight: lighter;
 }
+
+.span-subtitle {
+    color: rgb(255, 8, 0);
+    font-weight: 200;
+}
+
+.box-about-me-content {
+    display: flex;
+    width: 100vw;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.about-me-content {
+    display: block;
+    width: 50vw;
+    height: max-content;
+    text-align: center;
+
+    padding: 10px;
+
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.span-content {
+    color: rgb(0, 255, 255);
+    font-weight: lighter;
+}
+
+
 
 .container {
+    display: flex;
+
     width: 100vw;
-    height: 70vh;
-    padding: 10px;
-    display: none;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-evenly;
+    height: max-content;
+
+    justify-content: space-around;
     align-items: center;
-    color: #fff;
-    padding: 50px;
+
+    padding: 10px;
 }
 
+.cards {
+    display: flex;
 
-.card-content {
-    width: 33%;
-    height: 20vh;
-    background-color: rgb(255, 166, 0);
-    border-radius: 15px;
+    width: 15vw;
 
-    box-shadow: 5px 10px 20px 0px orange,
-    50px 10px 100px 0px red;
-
-    padding: 25px;
-    font-size: 25px;
-    font-weight: lighter;
-    text-shadow: 2px 0px 2px #fff;
-    margin: 20px 0 20px 0;
+    background-color: #ffffff7d;
 }
-
-
-
-
-
-
 
 
 
@@ -232,4 +268,18 @@ body::-webkit-scrollbar {
     100% {
         opacity: 0;
     }
+}
+
+@keyframes top-slide-in {
+    from {
+        transform: translateY(-7vh);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes hard-skills-up {
+    to { transform: translateY(-100vh); }
 }
