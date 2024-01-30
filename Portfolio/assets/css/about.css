@@ -104,7 +104,7 @@ body::-webkit-scrollbar {
 }
 
 .about-me-title {
-    display: block;
+    display: none;
     width: 100vw;
     height: max-content;
     text-align: center;
@@ -118,7 +118,7 @@ body::-webkit-scrollbar {
 }
 
 .about-me-subtitle {
-    display: block;
+    display: none;
     width: 100vw;
     height: max-content;
     text-align: center;
@@ -137,7 +137,7 @@ body::-webkit-scrollbar {
 }
 
 .box-about-me-content {
-    display: flex;
+    display: none;
     width: 100vw;
     height: max-content;
     justify-content: center;
@@ -167,7 +167,7 @@ body::-webkit-scrollbar {
 
 
 .container {
-    display: flex;
+    display: none;
 
     width: 100vw;
     height: max-content;
@@ -176,22 +176,62 @@ body::-webkit-scrollbar {
     align-items: center;
 
     padding: 10px;
+    margin: 100px 0;
 }
 
 .cards {
     display: flex;
+    flex-direction: column;
 
     width: 20vw;
     height: 350px;
     border-radius: 25px;
-    box-shadow: 0px 0px 25px 5px #00ffffc8;
 
-    background-color: #00e1ff;
+    padding: 25px;
 }
 
+.cards:nth-of-type(1) {
+    box-shadow: 0px 0px 25px 5px orangered;
 
+    background-color: orangered;
+}
 
+.cards:nth-of-type(2) {
+    box-shadow: 0px 0px 25px 5px rgb(0, 166, 255);
 
+    background-color: rgb(0, 166, 255);
+}
+
+.cards:nth-of-type(3) {
+    box-shadow: 0px 0px 25px 5px rgb(255, 224, 47);
+
+    background-color: rgb(255, 224, 47);
+}
+
+.box-img {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+.cards img {
+    width: 100px;
+}
+
+.cards h1 {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    
+    color: #000;
+    font-weight: 200;
+}
+
+.cards p {
+
+}
 
 
 @keyframes top-slide-out {
@@ -275,7 +315,7 @@ body::-webkit-scrollbar {
 
 @keyframes top-slide-in {
     from {
-        transform: translateY(-7vh);
+        transform: translateY(-10vh);
     }
 
     to {
@@ -285,4 +325,13 @@ body::-webkit-scrollbar {
 
 @keyframes hard-skills-up {
     to { transform: translateY(-100vh); }
+}
+
+@keyframes bottom-slide-in {
+    from {
+        transform: translateY(85vw);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
