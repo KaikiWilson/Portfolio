@@ -208,6 +208,24 @@ body::-webkit-scrollbar {
     background-color: rgb(255, 224, 47);
 }
 
+#container-2-id .cards:nth-of-type(1) {
+    box-shadow: 0px 0px 25px 5px rgb(0, 251, 255);
+
+    background-color: rgb(0, 251, 255);
+}
+
+#container-2-id .cards:nth-of-type(2) {
+    box-shadow: 0px 0px 25px 5px rgb(0, 255, 76);
+
+    background-color: rgb(0, 255, 76);
+}
+
+#container-2-id .cards:nth-of-type(3) {
+    box-shadow: 0px 0px 25px 5px rgb(38, 0, 255);
+
+    background-color: rgb(38, 0, 255);
+}
+
 .box-img {
     width: 100%;
     height: max-content;

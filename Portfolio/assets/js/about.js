@@ -10,17 +10,21 @@ const explorer = () => {
     const box_about_me_content = window.document.getElementById("box-about-me-content-id");
     const container = window.document.getElementById("container-id");
 
+    const container2 = window.document.getElementById("container-2-id");
+
     const show_content = () => {
         if (btn.style.display === "none") {
             title.style.display = 'block'
             subtitle.style.display = 'block'
             box_about_me_content.style.display = 'flex'
             container.style.display = 'flex'
+            container2.style.display = 'flex'
 
             title.style.animation = '1.25s top-slide-in'
             subtitle.style.animation = '1.25s fade-in'
             box_about_me_content.style.animation = '1.25s bottom-slide-in'
             container.style.animation = '2.25s bottom-slide-in'
+            container2.style.animation = '6s bottom-slide-in'
         }
 
     }
