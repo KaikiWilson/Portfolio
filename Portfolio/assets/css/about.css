@@ -188,6 +188,37 @@ body::-webkit-scrollbar {
     border-radius: 25px;
 
     padding: 25px;
+
+    transition: .15s;
+}
+
+.cards:hover {
+    scale: 1.075;
+
+    transition: .15s;
+
+    .box-img {
+        transform: translateY(-100px);
+        transition: .20s;
+    }
+    
+    img {
+        width: 150px;
+
+        transition: .20s;
+    }
+
+    h1 {
+        transform: translateY(-100px);
+
+        transition: .20s;
+    }
+
+    p {
+        transform: translateY(-75px);
+
+        transition: .20s;
+    }
 }
 
 .cards:nth-of-type(1) {
@@ -203,9 +234,9 @@ body::-webkit-scrollbar {
 }
 
 .cards:nth-of-type(3) {
-    box-shadow: 0px 0px 25px 5px rgb(255, 224, 47);
+    box-shadow: 0px 0px 25px 5px rgb(255, 204, 0);
 
-    background-color: rgb(255, 224, 47);
+    background-color: rgb(255, 204, 0);
 }
 
 #container-2-id .cards:nth-of-type(1) {
@@ -231,10 +262,14 @@ body::-webkit-scrollbar {
     height: max-content;
     display: flex;
     justify-content: center;
+
+    transition: .20s;
 }
 
 .cards img {
     width: 100px;
+
+    transition: .20s;
 }
 
 .cards h1 {
@@ -245,10 +280,15 @@ body::-webkit-scrollbar {
     
     color: #000;
     font-weight: 200;
+
+    transition: .20s;
 }
 
 .cards p {
 
+    font-size: 15px;
+
+    transition: .20s;
 }
 
 
