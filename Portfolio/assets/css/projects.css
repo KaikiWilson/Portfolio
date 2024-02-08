@@ -17,7 +17,58 @@ main {
     justify-content: center;
 }
 
-.box-content {
+.first-section {
     display: flex;
+    width: 95vw;
+    height: 95vh;
+
+    align-items: center;
+    padding: 10px;
+
+    background-color: rgb(255, 0, 123);
+}
+
+.text-my {
+    display: block;
     width: 50%;
+    height: max-content;
+
+    text-align: right;
+    color: #fff;
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 200,
+    'opsz' 20;
+
+    display: flex;
+    position: absolute;
+    text-align: center;
+    transform: translate(45%, 45vh);
+    width: 49.25%;
+    color: #fff;
+  }
+
+.box-right-content {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 50%;
+    height: 95vh;
+}
+
+.box-iframe {
+    width: 500px;
+    height: 375px;
+    padding: 20px;
+    background-color: #000;
+}
+
+.box-iframe img {
+    width: 50px;
 }

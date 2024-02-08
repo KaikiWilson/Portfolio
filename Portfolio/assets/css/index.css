@@ -51,6 +51,10 @@ body {
     transition: .3s;
 }
 
+.navbar .active {
+    color: rgb(0, 255, 136);
+}
+
 .navbar a:before {
     content: "";
     position: absolute;
