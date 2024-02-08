@@ -179,6 +179,21 @@ body::-webkit-scrollbar {
     margin: 100px 0;
 }
 
+.title-cards {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    color: #fff;
+    text-shadow: 0px 0px 50px #fff;
+    background-color: #ffffff0c;
+
+    font-size: 40px;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 100px;
+}
+
 .cards {
     display: flex;
     flex-direction: column;
@@ -195,29 +210,29 @@ body::-webkit-scrollbar {
 .cards:hover {
     scale: 1.075;
 
-    transition: .15s;
+    transition: .3s;
 
     .box-img {
         transform: translateY(-100px);
-        transition: .20s;
+        transition: .3s;
     }
     
     img {
         width: 150px;
 
-        transition: .20s;
+        transition: .3s;
     }
 
     h1 {
         transform: translateY(-100px);
 
-        transition: .20s;
+        transition: .3s;
     }
 
     p {
         transform: translateY(-75px);
 
-        transition: .20s;
+        transition: .3s;
     }
 }
 
@@ -259,7 +274,7 @@ body::-webkit-scrollbar {
 
 .box-img {
     width: 100%;
-    height: max-content;
+    height: 75%;
     display: flex;
     justify-content: center;
 
@@ -274,19 +289,13 @@ body::-webkit-scrollbar {
 
 .cards h1 {
     width: 100%;
+    height: 25%;
 
     display: flex;
     justify-content: center;
     
     color: #000;
     font-weight: 200;
-
-    transition: .20s;
-}
-
-.cards p {
-
-    font-size: 15px;
 
     transition: .20s;
 }

@@ -4,6 +4,7 @@ const explorer = () => {
     const box_who_i_am = window.document.getElementById("box-who-i-am-id");
     const box_bottom_content = window.document.getElementById("box-bottom-content-id");
     const btn = window.document.getElementById("btn-explorer");
+    const title_cards = window.document.getElementById("title-cards-id");
 
     const title = window.document.getElementById("about-me-title-id");
     const subtitle = window.document.getElementById("about-me-subtitle-id");
@@ -19,12 +20,14 @@ const explorer = () => {
             box_about_me_content.style.display = 'flex'
             container.style.display = 'flex'
             container2.style.display = 'flex'
+            title_cards.style.display = 'flex'
 
             title.style.animation = '1.25s top-slide-in'
             subtitle.style.animation = '1.25s fade-in'
             box_about_me_content.style.animation = '1.25s bottom-slide-in'
             container.style.animation = '2.25s bottom-slide-in'
             container2.style.animation = '6s bottom-slide-in'
+            title_cards.style.animation = '2s bottom-slide-in'
         }
 
     }

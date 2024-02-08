@@ -37,19 +37,40 @@ body {
 .navbar a {
     display: inline-block;
     height: max-content;
+    position: relative;
     font-size: 18px;
     opacity: 0;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
+    margin-left: 35px;    
     animation: slideTop 5s ease forwards;
     animation-delay: calc(.2s * var(--i));
+    border-bottom: 2px solid transparent;
+
+    transition: .3s;
 }
 
-.navbar a:hover, .navbar a.active {
+.navbar a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 255, 136);
+    visibility: hidden;
+    -webkit-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+  }
+
+  .navbar a:hover {
     color: rgb(0, 255, 136);
+  }
+
+.navbar a:hover:before {
+    visibility: visible;
+    width: 100%;
 }
 
 .home {
